@@ -1,0 +1,9 @@
+class calc:
+    def __init__(self,x):
+        self.x=x
+    def __mul__(self,y):
+        return self.x*y.x
+a=calc(10)
+b=calc(5)
+print(a*b)
+a.__mul__(b)
