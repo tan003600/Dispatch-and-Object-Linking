@@ -1,0 +1,9 @@
+class string:
+    def __init__(self,x):
+        self.x=x
+    def __add__(self,y):
+        return self.x+y.x
+a=string('CSE')
+b=string('111')
+
+a.__add__(b)
