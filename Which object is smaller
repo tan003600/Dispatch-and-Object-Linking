@@ -8,5 +8,7 @@ class data:
             return False
 a=data(8)
 b=data(7)
+
+#both command will work, but only one of them will be noticed in output
 a.__gt__(b)
 print(a<b) 
