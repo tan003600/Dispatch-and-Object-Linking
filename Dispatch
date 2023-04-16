@@ -1,0 +1,29 @@
+from multipledispatch import dispatch
+class calc:
+    
+    @dispatch(int,int)
+    def prod(self,a,b):
+        print(a*b)
+
+    @dispatch(int,int,int)
+    def prod(self,a,b,c):
+        print(a*b*c)
+
+    @dispatch(str,str)
+    def prod(self,a,b):
+        print(int(a)*int(b))
+
+    @dispatch(float,float)
+    def prod(self,a,b):
+        print(a*b)
+
+    @dispatch(int,str)
+    def prod(self,a,b):
+        print(a*int(b))
+
+    @dispatch(str,int)
+    def prod(self,a,b):
+        print(int(a)*b)
+
+x=calc()
+x.prod(5,6)
