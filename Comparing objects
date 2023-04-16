@@ -1,0 +1,12 @@
+class calc:
+    def __init__(self,x):
+        self.x=x
+    def __cmp__(self,y):
+        if self.x>y.x:
+            return True
+        elif self.x<y.x:
+            return False
+a=calc(10)
+b=calc(5)
+#print(a>b) #kaj kore na
+a.__cmp__(b)
