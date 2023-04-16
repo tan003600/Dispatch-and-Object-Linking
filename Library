@@ -1,0 +1,14 @@
+
+#Object linking
+#add +
+#sub -
+#mul *
+#truediv /
+#floordiv //
+#pow **
+#lt <
+#gt >
+#eq ==
+#ne !=
+#le <=
+#ge >=
