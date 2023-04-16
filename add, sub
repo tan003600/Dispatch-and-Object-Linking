@@ -1,0 +1,18 @@
+class data:
+    def __init__(self,x):
+        self.x=x
+    def __add__(self,y):
+        return self.x+y.x
+    def __sub__(self,z):
+        return self.x-z.x
+a=data(5)
+b=data(6)
+c=data(4)
+
+#print(a+b)  $$doesn't execute$$
+
+#a.__add__(b) $$doesn't execute$$
+
+print(a-c) #$$Just last print command is getting executed$$
+
+a.__sub__(c) #$$Just last method call is getting executed$$
