@@ -8,5 +8,5 @@ class calc:
             return False
 a=calc(10)
 b=calc(5)
-#print(a>b) #kaj kore na
+#print(a>b) #doesn't work
 a.__cmp__(b)
