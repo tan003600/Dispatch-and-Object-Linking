@@ -1,0 +1,27 @@
+from multipledispatch import dispatch
+
+class string:
+    def __init__(self,x):
+        self.x=x
+#    @dispatch(str,int)
+    def __add__(self,y):
+        return self.x+y.x
+a=string('CSE')
+#b=string(111)
+c=string('111')
+a.__add__(c)
+
+#NotImplementedError                    
+#<ipython-input-16-c66d1d5e54ef> in <cell line: 11>()
+#      9 a=string('CSE')
+ #    10 b=string(111)
+#---> 11 a.__add__(b)
+
+#/usr/local/lib/python3.9/dist-packages/multipledispatch/dispatcher.py in __call__(self, *args, **kwargs)
+#    431         func = self.dispatch(*types)
+#    432         if not func:
+#--> 433             raise NotImplementedError('Could not find signature for %s: <%s>' %
+ #   434                                       (self.name, str_signature(types)))
+ #   435         return func(self.obj, *args, **kwargs)
+
+#NotImplementedError: Could not find signature for __add__: <string>
