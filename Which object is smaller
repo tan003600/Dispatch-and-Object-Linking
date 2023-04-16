@@ -1,0 +1,12 @@
+class data:
+    def __init__(self,x):
+        self.x=x
+    def __lt__(self,y):
+        if self.x<y.x:
+            return True
+        else:
+            return False
+a=data(8)
+b=data(7)
+a.__gt__(b)
+print(a<b) 
